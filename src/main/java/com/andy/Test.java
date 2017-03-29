@@ -11,6 +11,12 @@ public class Test {
         OuterClass.InnerClass innerClass = outerClass.new InnerClass();
         innerClass.display();
         
+        Normal normal = new Normal() {
+        		public void speek() {
+        			System.out.println("the override speek...");
+        		}
+        };
         
+        normal.speek();
     }
 }
